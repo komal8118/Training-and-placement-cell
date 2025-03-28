@@ -30,7 +30,7 @@ State Management: Context API / Redux (if used)
 sh
 Copy
 Edit
-git clone https://github.com/komal8118/training-placement-cell.git
+git clone https://github.com/komal8118/Training-and-placement-cell.git
 cd training-placement-cell
 2️⃣ Install dependencies
 sh
