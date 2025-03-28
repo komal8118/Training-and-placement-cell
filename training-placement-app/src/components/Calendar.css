@@ -1,0 +1,16 @@
+/* Calendar.css */
+.calendar {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .calendar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .calendar li {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  

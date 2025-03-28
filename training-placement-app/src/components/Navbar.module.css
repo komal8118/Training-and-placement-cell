@@ -1,0 +1,102 @@
+.navbar {
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  margin: 0;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks li {
+  list-style: none;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+}
+
+.navLinks a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger Menu Icon */
+.menuIcon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Sidebar for Mobile */
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block;
+    z-index: 1100;
+  }
+
+  .navLinks {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: #8BC6EC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    transition: right 0.3s ease-in-out;
+    z-index: 1050;
+  }
+
+  .open {
+    right: 0;
+  }
+
+  .navLinks li {
+    margin: 15px 0;
+  }
+
+  /* Background Overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+}
+
+.logoutButton {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.logoutButton:hover {
+  background-color: darkred;
+}

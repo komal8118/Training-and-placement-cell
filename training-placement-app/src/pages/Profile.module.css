@@ -1,0 +1,333 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('images/a7.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 60px; 
+  
+  width: 250px;
+  height: calc(80vh - 50px); 
+  background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  padding: 20px;
+
+  color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  
+}
+
+.sidebar h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: block;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+.content {
+  margin-left: 280px;
+  margin-top: 80px; 
+  
+  width: 70%;
+  padding: 20px;
+}
+
+.section {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #444;
+}
+
+.required {
+  color: red;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 147, 233, 0.5);
+  background: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(160deg, #007ACC 0%, #66C2B9 100%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.deleteButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dc3545;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  gap: 6px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.deleteButton:hover {
+  transform: translateY(-2px);
+  background: #c82333;
+}
+
+
+
+
+.profileImageContainer {
+  background-color: #f2a2cd;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #f4aedb 100%);
+  background: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: relative;
+  z-index: 1000;
+ 
+}
+
+.profileImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ccc;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profileImage:hover {
+  transform: scale(1.1);
+}
+
+
+.profileEditIcon {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  background: #0f0a0a;
+  border-radius: 30%;
+  padding: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.profileEditIcon:hover {
+  transform: scale(1.1);
+}
+
+.resumeSection h3 {
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+
+.uploadButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  gap: 8px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.uploadButton:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(160deg, #007ACC 0%, #66C2B9 100%);
+}
+
+
+.resumePreview {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.downloadButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #28a745;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  gap: 6px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.downloadButton:hover {
+  transform: translateY(-2px);
+  background: #218838;
+}
+
+
+@media (max-width: 768px) {
+  .resumeSection {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .profileImage {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profileEditIcon {
+    bottom: 5px;
+    right: 5px;
+    padding: 4px;
+  }
+
+  .resumeSection {
+    width: 95%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+  .content {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profileImage {
+    width: 60px;
+    height: 60px;
+  }
+  .profileInfo {
+    margin-left: 0;
+  }
+}

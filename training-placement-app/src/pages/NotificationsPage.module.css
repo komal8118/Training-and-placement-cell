@@ -1,0 +1,104 @@
+
+/* Styling for the Notifications Page */
+.notificationPageContainer {
+  background-image: url('images/a7.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Notification Container */
+.notificationContainer {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Event List */
+.eventList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.eventItem {
+  background-color: #ffffff;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Read notifications */
+.read {
+  background-color: #e0e0e0;
+  text-decoration: line-through;
+  color: #777;
+}
+
+/* Unread notifications */
+.unread {
+  background-color: #dff6ff;
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.deleteButton {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.deleteButton:hover {
+  background-color: #c0392b;
+}
+
+.markReadButton {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.markReadButton:hover {
+  background-color: #45a049;
+}

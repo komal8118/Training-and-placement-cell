@@ -1,0 +1,93 @@
+/* ✅ Main Container */
+.jobTrackingContainer {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* ✅ Hero Section with Background Image */
+.heroSection {
+  background: url('./images/a11.jpg') no-repeat center center/cover;
+  padding: 6rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  background-clip: text;  /* Standard property */
+  -webkit-background-clip: text; /* For WebKit browsers (Chrome, Safari) */
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  /* font-size: 2.5rem;
+  font-weight: bold;
+  color: rgba(4, 5, 9, 0.866);
+  margin-bottom: 2rem; */
+}
+
+/* ✅ Job List Container */
+.jobListContainer {
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+/* ✅ Job Cards */
+.jobList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.jobCard {
+  background: white;
+  padding: 1.5rem;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.jobTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.company,
+.location,
+.description {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ✅ Loading & Error Messages */
+.loading {
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.error {
+  font-size: 1.2rem;
+  color: red;
+}
+
+.noJobs {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* ✅ Footer */
+.footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #333;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+}

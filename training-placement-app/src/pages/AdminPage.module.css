@@ -1,0 +1,135 @@
+
+   .admin-dashboard {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.adminPageContainer {
+    background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 20px;
+}
+
+.adminContainer {
+    width: 80%;
+    max-width: 1000px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2, h3, h5 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.jobCard {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    text-align: left;
+}
+
+.jobCard p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.jobTable {
+    width: 100%;
+    border-collapse: collapse;
+    background: linear-gradient(135deg, #f5f6f6, #d1e2fc);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.jobTable th, .jobTable td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.jobTable th {
+    background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
+    color: rgb(10, 8, 8);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.jobTable td {
+    color: #555;
+    font-size: 14px;
+}
+
+button {
+    padding: 6px 12px;
+    margin: 5px;
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #d63031;
+}
+
+.deleteButton {
+    background-color: #e74c3c;
+}
+
+.deleteButton:hover {
+    background-color: #c0392b;
+}
+
+.logout-btn {
+    background-color: #4CAF50;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.logout-btn:hover {
+    background-color: #388E3C;
+}
+
+.active {
+    color: green;
+    font-weight: bold;
+}
+
+.inactive {
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .adminContainer {
+        width: 95%;
+    }
+
+    .jobTable th, .jobTable td {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}

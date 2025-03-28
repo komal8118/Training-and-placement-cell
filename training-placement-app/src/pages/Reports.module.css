@@ -1,0 +1,57 @@
+/* Main container */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Page title */
+.title {
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Report Box */
+.reportBox {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* Report headings */
+.reportHeading {
+  font-size: 22px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Report text */
+.reportText {
+  font-size: 18px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Chart container */
+.chartContainer {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Chart title */
+.chartTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

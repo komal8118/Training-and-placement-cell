@@ -1,0 +1,176 @@
+/* Home Page Styling */
+.homeBanner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* Allows scrolling */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(88, 1, 1, 0.656);
+    overflow: hidden;
+}
+
+
+/* Background Video */
+.video {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Content Overlay */
+.homeContent {
+    position: relative;
+    z-index: 2;
+    color: #13416f;
+    text-shadow: 2px 2px 5px #1f1212df;
+    padding: 100px 20px;
+}
+
+/* Push next section down so it doesn’t overlap with video */
+.aboutSection {
+    padding: 80px 40px;
+    background-color: #f29c9c;
+    text-align: center;
+    position: relative;
+    color: aliceblue;
+}
+
+/* Title */
+.aboutSection h3 {
+    font-size: 2.2em;
+    color: #13416f;
+}
+
+/* Analytics Section */
+.analyticsSection {
+    margin-top: 50px;
+    background-color: #f4f4f4;
+    padding: 80px 20px;
+    min-height: 500px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Analytics Title */
+.analyticsSection h3 {
+    font-size: 2.5em;
+    color: #13416f;
+    margin-bottom: 30px;
+}
+
+/* Analytics Images */
+.analyticsImages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Ensure images are responsive and visible */
+.analyticsImages img {
+    height: 80%;
+    margin: 1;
+    width: 80%;
+    object-fit: cover;
+    /* max-width: 90%;
+    width: 280px;
+    height: auto; */
+    display: block;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    overflow-clip-margin: content-box !important;
+    overflow: clip !important;
+}
+
+/* Image Hover Effect */
+.analyticsImages img:hover {
+    transform: scale(1.05);
+}
+
+/* Ensures images are positioned properly */
+.analyticsImages img:nth-child(n) {
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .aboutSection {
+        padding: 60px 20px;
+    }
+
+    .aboutSection h3, .analyticsSection h3 {
+        font-size: 1.8em;
+    }
+
+    .analyticsImages img {
+        width: 100%;
+        max-width: 220px;
+    }
+}
+.recruiterSection {
+    /* margin-top: 50px; */
+    background-color: #f4f4f4;
+    padding: 80px ;
+    min-height: 500px;
+    text-align: center;
+    font-size: 1.5em;
+}
+.recruiterImages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+.recruiterImages img {
+    height: 80%;
+    margin: 1;
+    width: 80%;
+    object-fit: cover;
+    /* max-width: 90%;
+    width: 280px;
+    height: auto; */
+    display: block;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    overflow-clip-margin: content-box !important;
+    overflow: clip !important;
+}
+.recruiterSection h3 {
+    font-size: 2.5em;
+    color: #13416f;
+    margin-bottom: 30px;
+}
+.recruiterImages img:hover {
+    transform: scale(1.05);
+}
+
+/* Ensures images are positioned properly */
+.recruiterImages img:nth-child(n) {
+    position: relative;
+    z-index: 1;
+}
+@media (max-width: 768px) {
+    
+
+     .recruiterSection h3 {
+        font-size: 1.8em;
+    }
+
+    .recruiterImages img {
+        width: 100%;
+        max-width: 220px;
+    }
+}

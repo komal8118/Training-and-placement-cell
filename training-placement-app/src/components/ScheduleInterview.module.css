@@ -1,0 +1,108 @@
+/* Background Styling */
+.scheduleInterview {
+    background-image: url('images/a11.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ensures background remains in place while scrolling */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Add a slight zoom effect on hover */
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Heading */
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Select Dropdown & Input Fields */
+.selectField,
+.inputField {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover & Focus effects */
+.selectField:hover,
+.inputField:hover {
+    border-color: #4682B4;
+}
+
+.selectField:focus,
+.inputField:focus {
+    border-color: #58a2f0;
+    outline: none;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(88, 162, 240, 0.5);
+}
+
+/* Button */
+.button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: #79b3f2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+.button:hover {
+    background: #071627;
+}
+
+/* Disabled Button */
+.button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+}
